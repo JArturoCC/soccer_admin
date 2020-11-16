@@ -18,31 +18,31 @@ age:
 const  LigaSchema = Schema({
     name: {
         type: String,
-        require: true,
+        required: true,
     },
     start_date : {
         type: Date,
-        require: true
+        required: true
     },
     category : {
         type: String,
-        require: true
+        required: true
     },
     age : {
         type: String,
-        require: true
+        required: true
     },
     points_for_winning : {
         type: Number,
-        require: true
+        required: true
     },
     points_for_tie : {
         type: Number,
-        require: true
+        required: true
     },
     points_for_loss : {
         type: Number,
-        require: true
+        required: true
     }
 });
 
