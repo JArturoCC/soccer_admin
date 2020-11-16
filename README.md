@@ -1,2 +1,3 @@
-# soccer_admin
-Backend Soccer Admin
+# BACKEND SOCCER_ADMIN
+
+Backend para la app movil soccer_admin
