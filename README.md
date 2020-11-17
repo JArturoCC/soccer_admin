@@ -25,3 +25,12 @@ CRUD para equipos:
 2) /api/team => POST => Endpoint para crear un equipo
 3) /api/team/:id => PUT => Endpoint para actualizar un equipo por ID
 3) /api/team/:id => DELETE => Endpoint para eliminar un equipo por ID
+
+### JUGADORES:
+
+CRUD para jugadores:
+
+1) /api/player => GET => Endpoint para obtener los jugadores 
+2) /api/player/:id => POST => Endpoint para crear un jugador se envia el ID del equipo al que pertenece el jugador
+3) /api/player/:id => PUT => Endpoint para actualizar un jugador por ID
+3) /api/player/:id => DELETE => Endpoint para eliminar un jugador por ID
