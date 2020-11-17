@@ -19,6 +19,7 @@ app.use(express.json());
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/liga', require('./routes/liga'));
 app.use('/api/team', require('./routes/team'));
+app.use('/api/player', require('./routes/player'));
 
 //Escuchar peticiones listen(puerto, callback cuando se ejecuta el proyecto)
 app.listen(process.env.PORT, () => {
