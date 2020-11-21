@@ -20,6 +20,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/liga', require('./routes/liga'));
 app.use('/api/team', require('./routes/team'));
 app.use('/api/player', require('./routes/player'));
+app.use('/api/calendar', require('./routes/calendar'));
 
 //Escuchar peticiones listen(puerto, callback cuando se ejecuta el proyecto)
 app.listen(process.env.PORT, () => {
