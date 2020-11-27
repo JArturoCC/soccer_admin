@@ -2,7 +2,7 @@ const { Router } = require('express');
 const { check } = require('express-validator');
 const { validarCampos } = require('../middlewares/validar_campos');
 const { validarJWT } = require('../middlewares/validar_jwt');
-const { getPlayers, crearPlayer, actualizarPlayer, eliminarPlayer } = require('../controllers/player');
+const { getPlayers, crearPlayer, actualizarPlayer, eliminarPlayer, getPlayersByTeam } = require('../controllers/player');
 const { isDate } = require('../helpers/isDate');
 
 const router = Router();
@@ -10,6 +10,8 @@ const router = Router();
 router.use(validarJWT);
 
 router.get('/', getPlayers);
+
+router.get('/:id', getPlayersByTeam);
 
 router.post(
     '/:id',

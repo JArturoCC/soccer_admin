@@ -12,6 +12,20 @@ const getPlayers = async(req, res = response) => {
     })
 }
 
+const getPlayersByTeam = async(req, res = response) => {
+
+    const teamId = req.params.id;
+
+    const players = await Player.find();
+
+    const sendPlayersByTeam = players.filter(item => item.id_team === teamId)
+
+    return res.json({
+        ok: true,
+        sendPlayersByTeam
+    })
+}
+
 const crearPlayer = async(req, res = response) => {
 
     const teamId = req.params.id;
@@ -122,6 +136,7 @@ const eliminarPlayer = async(req, res = response) => {
 
 module.exports = {
     getPlayers,
+    getPlayersByTeam,
     crearPlayer,
     actualizarPlayer,
     eliminarPlayer
