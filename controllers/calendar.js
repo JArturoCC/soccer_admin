@@ -66,12 +66,12 @@ const getCalendar = async(req, res = response) => {
                 fechaInicioJuvenil = startDate.add(3, 'day');
             }else if(startDate.day() === 2) {
                 fechaInicioJuvenil = startDate.add(2, 'day');
-            }else if(startDate.day() === 4) {
+            }else if(startDate.day() === 3) {
                 fechaInicioJuvenil = startDate.add(1, 'day');
             }else if(startDate.day() === 5) {
                 fechaInicioJuvenil = startDate.add(6, 'day');
             }else if(startDate.day() === 6) {
-                fechaInicioJuvenil = startDate.add(6, 'day');
+                fechaInicioJuvenil = startDate.add(5, 'day');
             }
 
             teams.forEach((team) => {
@@ -95,7 +95,7 @@ const getCalendar = async(req, res = response) => {
                 fechaInicioFemenil = startDate.add(2, 'day');
             }else if(startDate.day() === 4) {
                 fechaInicioFemenil = startDate.add(1, 'day');
-            }else if(startDate.day() === 5) {
+            }else if(startDate.day() === 6) {
                 fechaInicioFemenil = startDate.add(6, 'day');
             }
 
