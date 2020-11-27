@@ -1,3 +1,4 @@
+const dayjs = require('dayjs');
 
 function Fixture (nombresEquipo, fechaInicio, categoria) {
     let totalEquipos = nombresEquipo.length;
@@ -25,6 +26,8 @@ function Fixture (nombresEquipo, fechaInicio, categoria) {
 }
 
 const Equipos4 = (nombresEquipo, fechInicio, categoria) => {
+
+    fechInicio = dayjs(fechInicio);
 
     calendarioObj = {
         categoria: categoria,
